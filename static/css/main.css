@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body{
+    margin: 0;
+    background: #eeeeee;
+    color: #222;
+    font-family: 'Open Sans';
+}
+
+.shortner{
+    text-align: center;
+    padding: 50px 20px;
+    background: #FFF;
+    width: 50%;
+    margin: 30px auto 0 auto;
+    display: block;
+    justify-content: center;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    animation: shortnerLoad 1s;
+}
+
+.shortner h2{
+    text-transform: uppercase;
+    color: #666;
+}
+
+.shortner form input{
+    margin: 30px auto 20px auto;
+    display: block;
+    justify-content: center;
+    display: block;
+    padding: 6px;
+    outline: none;
+    border: none;
+    border-bottom: solid 2px #111;
+    color: #444;
+}
+
+.shortner form button{
+    padding: 10px 15px;
+    background: rgb(29, 240, 255);
+    border: none;
+    outline: none;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #333;
+    transition: transform 300ms;
+}
+
+.shortner form button:hover{
+    transform: translateY(-4px);
+}
+
+.shortner .warn{
+    background: #eee;
+    color: #333;
+    border-radius: 2px;
+    display: none;
+    padding: 10px 25px;
+}
+
+@keyframes shortnerLoad{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
