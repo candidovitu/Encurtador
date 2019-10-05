@@ -1,3 +1,0 @@
-{
-    "ignore": ["./static/js/*.js", "static/js/*.js", "./static/"]
-}
